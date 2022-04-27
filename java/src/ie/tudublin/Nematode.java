@@ -24,4 +24,14 @@ class Nematode {
         eyes = row.getInt("eyes");
         
     }
+
+    //toString method
+    public String toString(){
+
+        return Name
+            + "," + Length
+            + "," + Limbs
+            + "," + gender
+            + "," + eyes;
+    }
 }

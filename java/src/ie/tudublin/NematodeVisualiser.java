@@ -45,5 +45,6 @@ public class NematodeVisualiser extends PApplet
 
 	public void draw()
 	{	
+		background(0);
 	}
 }
