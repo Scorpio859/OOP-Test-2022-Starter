@@ -87,13 +87,15 @@ class Nematode {
     }
     
     //rendering the nematode
-    public Nematode render(NematodeVisualiser nematode) {
+    public void render(NematodeVisualiser nematode) {
         float x = nematode.width/2;
         float y = nematode.height/4;
 
         //printing the name of the worm
         nematode.text(Name, x-10, y-100);
 
+        nematode.stroke(255);
+        nematode.noFill();
         //forming the body of nematode
         for(int i = 0; i < Length; i++)
         {

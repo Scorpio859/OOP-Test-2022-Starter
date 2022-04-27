@@ -68,7 +68,8 @@ public class NematodeVisualiser extends PApplet
 	public void draw()
 	{	
 		//getting the data of the current nematode
-		Nematode nematode = Nematodes.get(current).render(this);
+		background(0);
+		Nematodes.get(current).render(this);
 		
 	}
 }
