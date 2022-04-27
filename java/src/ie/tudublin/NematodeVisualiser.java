@@ -32,6 +32,14 @@ public class NematodeVisualiser extends PApplet
 
 	public void loadNematodes()
 	{
+		//cfeating the array list
+		ArrayList<Nematode> Nematodes = new ArrayList<Nematode>();
+
+		Table table = loadTable("nematodes.csv", "header");
+		for (TableRow row : table.rows()) {
+			Nematode nematode = new Nematode(row);
+			Nematodes.add(nematode);
+		}
 	}
 
 
